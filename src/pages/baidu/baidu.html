@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>百度地图</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <div id="map" #map></div>
+
+    <div id="result">
+		<input type="button" value="清除" (click)="clearAll()"/>
+        <input type="button"  value="获取顶点" (click)="getPoint()"/>
+        <input type="button"  value="画多边形" (click)="draw()" />
+        <input type="button"  value="提交" (click)="submit()" />
+	</div>
+    <div id="shape"></div>
+</ion-content>
